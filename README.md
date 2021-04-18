@@ -50,7 +50,7 @@
 
 - Pucha os dados do repositorio remoto para o local.
 
-### git clone <URL>
+### git clone (URL)
 
 - Clona um repositorio para sua maquina, na pasta selecionada.
 
@@ -62,7 +62,7 @@
 
 - Mostra o log de commits do repositorio em questao de forma mas simples. 
 
-### git reset --hard <Chave-SH1>
+### git reset --hard (Chave-SH1)
 
 - Reseta os comits anteriores ate a verção desejada.
 
@@ -70,26 +70,26 @@
 
 - Cria um novo commit com as alterações do commit anterior.
 
-### git revert <Chave-SH1>
+### git revert (Chave-SH1)
 
 - Cria um novo commit, com as alterações do commit cujo a chave foi apresentada.
 
 ### git branch
 - Exibe todos os branch locais disponiveis
 
-### git branch <nome-da-branch>
+### git branch (nome-da-branch)
 
 - Criar um novo branch de acordo com o nome.
 
-### git branch -d <nome-da-branch>
+### git branch -d (nome-da-branch)
 
 - Remove uma branch de acordo com o nome passado. 
 
-### git push origin :<nome-da-branch>
-### git push origin --delete <nome-da-branch>
+### git push origin :(nome-da-branch)
+### git push origin --delete (nome-da-branch)
 - Remove uma branch do repositorio na nuvem.
 
-### git checkout <nome-da-branch>
+### git checkout (nome-da-branch)
 
 - Alterna entre branch de acordo com o nome.
 
@@ -106,15 +106,15 @@
 
 - Mostra o nome dos arquivos que foram modificados.
 
-### git merge <nome-da-branch>
+### git merge (nome-da-branch)
 
 - Copia os arquivos de uma branch para outra sem manter o historico.
 
-### git rebase <nome-da-branch>
+### git rebase (nome-da-branch)
 
 - Copia os arquivos de uma branch para outra mantendo o historico.
 
-### git cherry-pick <Chave-sh1>
+### git cherry-pick (Chave-sh1)
 
 - Copia um commit especifico para a branch escolhida .
 
