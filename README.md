@@ -42,11 +42,11 @@
 
 ### git push <-remote-> <-branch->
 
-- Empurra os dados do repositorio local para o remoto.
+- Empurra os dados do branch especifico para o remoto.
 
 ### git pull <-remote> <-branch->
 
-- Pucha os dados do repositorio remoto para o local.
+- Pucha os dados branch para o local.
 
 ### git clone <-url - remote->
 
@@ -60,9 +60,17 @@
 
 - Mostra o log de commits do repositorio em questao de forma mas simples. 
 
-### git reset --hard (Chave-SH1)
+### git reset --hard HEAD~1
 
-- Reseta os comits anteriores ate a verção desejada.
+- Reseta todas as alterações no git e arquivos até o commit selecionado.
+
+  ### --soft HEAD~1
+    - Desfaz o commit selecionado e mantem as alterações no diretorio.
+  ### HEAD path/to/file
+    - Reseta um arquivo especifico.
+  ### --hard <commit_hash>
+    - Reseta apagando tudo para um commit especifico.
+  
 
 ### git revert HEAD
 
@@ -91,11 +99,6 @@
 
 - Alterna entre branch de acordo com o nome.
 
-### git checkout 
-
-- Se o arquivo foi modificado mas ainda nao foi executado o git add, o \
-  comando remove alterações dos arquivos , e os deixa como no ultimo commit.
-
 ### git diff
 
 - Mostra as modificações feitas em arquivos antes do commit comparados ao commit anterior.
@@ -106,11 +109,15 @@
 
 ### git merge <-branch-> 
 
-- Copia os arquivos de uma branch para outra sem manter o historico.
+- Une as branchs especificadas, trazendo todos os comits da branch mergeada
 
-### git rebase <-branch->
+### git rebase -i <-branch->
+  - Server para remover commits especficos da branch
 
-- Copia os arquivos de uma branch para outra mantendo o historico.
+    ### - pick 
+      - Mantem o commit
+    ### - drop 
+      - Remove o commit
 
 ### git cherry-pick (Chave-sh1)
 
