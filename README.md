@@ -43,6 +43,8 @@
 ### git push <-remote-> <-branch->
 
 - Empurra os dados do branch especifico para o remoto.
+  ###  origin --delete branch
+    -  Deleta a branch escolhida do repositorio remoto
 
 ### git pull <-remote> <-branch->
 
@@ -87,9 +89,9 @@
 
 - Criar um novo branch de acordo com o nome.
 
-### git branch -d <-nome do branch->
+### git branch -d branch
 
-- Remove uma branch de acordo com o nome passado. 
+- Remove a branch especificada 
 
 ### git push <-remote-> :<-nome do branch->
 ### git push <-remote->  --delete <-nome do branch->
@@ -98,6 +100,8 @@
 ### git checkout <-nome do branch->
 
 - Alterna entre branch de acordo com o nome.
+    ### -d branch
+     - Deleta o branch especificado localmente
 
 ### git diff
 
